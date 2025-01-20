@@ -1,0 +1,7 @@
+transformers
+torch
+peft
+accelerate
+nltk
+sentencepiece
+bitsandbytes
