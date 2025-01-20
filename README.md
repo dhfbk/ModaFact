@@ -35,9 +35,9 @@ Example:
 
 ## Caveat
 
-- In order to use this script, you need a GPU with at least 24 GB RAM. Feel free to change line 7 if you want to execute it on CPU (not tested, though!)
-- Since the base model is approx. 52 GB, you may want to cache it, in order to download it at each execution. By default, the model is NOT cached. Please refer to the comments in the script about how to do it (lines 49 and 66).
+- In order to use this script, you need a GPU with at least 24 GB RAM. You can reset the device (line 10) if you want to execute it on CPU (not tested, though!)
+- Since the base model is approx. 52 GB, you may want to cache it, in order not to download it at each execution. By default, the model is NOT cached. Please refer to the comments in the script about how to do it (lines 49 and 66).
 
 - Be aware that `bitsandbytes`, used in the script, might be sensitive to the CUDA version. The script has been tested on a Nvidia A40, with CUDA 12.4 and `bitsandbytes==0.41.0`. 
 
-- The model has been fine-tuned with a max input length of 172 and a max output length of 185. Longer input sequences might not be fully processed.
+- The model has been fine-tuned with a max input length of 172 and a max output length of 185 (longest sequences in ModaFact). Longer input sequences might not be fully processed.
